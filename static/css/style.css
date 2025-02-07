@@ -18,12 +18,13 @@
   --font: Nunito, Arial, san-serif;
 }
 
-head,
-body {
+html {
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 body {
+  height: 100vh;
   background: var(--cor1);
 }
 
