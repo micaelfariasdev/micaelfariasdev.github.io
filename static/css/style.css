@@ -100,20 +100,23 @@ main h1 {
 
 main p,
 a {
-  font-size: 0.6em;
+  font-size: 0.8em;
   text-decoration: none;
   color: #ffffff;
 }
 
 article.sobre {
-  width: 80%;
+  width: 90%;
   padding: 20px;
   display: grid;
   gap: 10px;
   align-items: center;
   justify-content: space-between;
   grid-template-columns: 1fr 2fr;
-  grid-template-areas: "h1 h1" "img p1" "p2 p2";
+  grid-template-areas: "h1 h1" "img p1" "p2 p2"
+  "p3 p3"
+  "p4 p4"
+  "p5 p5";
 }
 article.sobre > h1 {
   grid-area: h1;
@@ -125,6 +128,15 @@ article.sobre > h1 {
 
 #sobre2 {
   grid-area: p2;
+}
+#sobre3 {
+  grid-area: p3;
+}
+#sobre4 {
+  grid-area: p4;
+}
+#sobre5 {
+  grid-area: p5;
 }
 
 main .img {

@@ -1,14 +1,10 @@
 @charset "UFT-8";
 
 @media screen and (min-width: 768px) {
-
-
   .menu-hamb,
   .menu-config {
     display: none;
   }
-
-
 
   .logo {
     display: grid;
@@ -65,11 +61,14 @@
 
   main .img {
     width: 250px;
-    height: 250px;
+    height: 300px;
   }
 
-  article.sobre{
-    grid-template-areas: "h1 h1" "img p1" "img p2";
+  article.sobre {
+    grid-template-areas:
+      "h1 h1 h1" "img p1 p1" "img p2 p2"
+      "img p3 p3"
+      "p4 p4 p4" "p5 p5 p5";
     padding-bottom: 50px;
   }
 
