@@ -46,10 +46,17 @@ div.conteiner {
   grid-area: logo;
   width: 70px;
 }
+
 .logo > img#larger {
   display: none;
 }
+
+.logo > img#mobile {
+  filter: invert(100%);
+}
+
 .menu-hamb {
+  display: none;
   grid-area: menu-hamb;
   background: var(--cor3);
   width: 40px;
@@ -59,6 +66,8 @@ div.conteiner {
 }
 
 .menu-config {
+  display: none;
+
   grid-area: menu-config;
   background: var(--cor3);
   width: 40px;
@@ -113,10 +122,11 @@ article.sobre {
   align-items: center;
   justify-content: space-between;
   grid-template-columns: 1fr 2fr;
-  grid-template-areas: "h1 h1" "img p1" "p2 p2"
-  "p3 p3"
-  "p4 p4"
-  "p5 p5";
+  grid-template-areas:
+    "h1 h1" "img p1" "p2 p2"
+    "p3 p3"
+    "p4 p4"
+    "p5 p5";
 }
 article.sobre > h1 {
   grid-area: h1;
@@ -202,6 +212,6 @@ footer {
   padding: 10px;
 }
 
-a > img{
-    padding: 10px;
+a > img {
+  padding: 10px;
 }
