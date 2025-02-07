@@ -10,22 +10,25 @@
 }
 
 :root {
-  --cor1: #000632;
+  --cor1: #030722;
   --cor5: #10195e;
   --cor4: #2d3888;
   --cor2: #5964b3;
-  --cor3: #939cdd;
+  --cor3: #1f2024;
   --font: Nunito, Arial, san-serif;
 }
 
 head,
-body{
+body {
   height: 100vh;
-
 }
 
 body {
   background: var(--cor1);
+}
+
+header {
+  background: rgb(17, 17, 17);
 }
 
 div.conteiner {
@@ -56,7 +59,6 @@ div.conteiner {
 }
 
 .menu-config {
-  
   grid-area: menu-config;
   background: var(--cor3);
   width: 40px;
@@ -74,7 +76,7 @@ header img {
 }
 
 main {
-  background: var(--cor3);
+  background: var(--cor1);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -89,18 +91,18 @@ aside {
 
 main h1 {
   color: transparent;
-  background: linear-gradient(0deg, var(--cor2), var(--cor5));
-  -webkit-background-clip: text;
-  font-size: 1.1em;
+  background: linear-gradient(0deg, var(--cor2), white);
+  font-size: 1em;
   font-weight: 1000;
   font-style: normal;
+  -webkit-background-clip: text;
 }
 
 main p,
 a {
   font-size: 0.6em;
   text-decoration: none;
-  color: #000632;
+  color: #ffffff;
 }
 
 article.sobre {
@@ -147,6 +149,8 @@ article.sobre > p {
 }
 
 main #bgc-dark {
+  box-shadow: 0px 8px 10px -5px black inset, 0px -8px 10px -5px black inset;
+
   display: flex;
   justify-content: center;
   background: rgba(255, 255, 255, 0.151);
@@ -157,6 +161,14 @@ main > aside {
   background: white;
   margin: 10px;
   border-radius: 20px;
+  padding-top: 0;
+}
+
+main > aside > h1 {
+  border-radius: 20px 20px 0px 0px;
+  padding: 10px;
+  color: #fffefe;
+  background: var(--cor3);
 }
 
 ul {
@@ -169,13 +181,15 @@ ul {
   font-size: 0.8em;
 }
 
-ul > li {
-}
-
 footer {
+  color: white;
   text-align: center;
   background-color: var(--cor3);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
   font-size: 0.7em;
   padding: 10px;
+}
+
+a > img{
+    padding: 10px;
 }
