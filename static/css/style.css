@@ -1,0 +1,165 @@
+@charset "UFT-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+  line-height: 1.7em;
+}
+
+:root {
+  --cor1: #000632;
+  --cor5: #10195e;
+  --cor4: #2d3888;
+  --cor2: #5964b3;
+  --cor3: #939cdd;
+  --font: Nunito, Arial, san-serif;
+}
+
+head,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background: var(--cor1);
+}
+
+header {
+  padding: 30px 30px 5px 30px;
+  display: grid;
+  grid-template-areas: "menu-hamb logo menu-config";
+  grid-template-columns: 30px 70px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  grid-area: logo;
+}
+.logo > img#larger {
+  display: none;
+}
+.menu-hamb {
+  grid-area: menu-hamb;
+  background: var(--cor3);
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.menu-config {
+  display: none;
+  grid-area: menu-config;
+  background: var(--cor3);
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.menu {
+  display: none;
+}
+
+header img {
+  width: 100%;
+}
+
+main {
+  background: var(--cor3);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+main > article.artigo,
+aside {
+  align-content: center;
+  width: 80%;
+  padding-block: 10px;
+}
+
+main h1 {
+  color: transparent;
+  background: linear-gradient(0deg, var(--cor2), var(--cor5));
+  -webkit-background-clip: text;
+  font-size: 1.1em;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+main > article.artigo > p,
+a {
+  font-size: 0.6em;
+  text-decoration: none;
+  color: #000632;
+}
+
+article.sobre {
+  padding: 20px;
+  display: grid;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 30% 65%;
+  grid-template-areas: "h1 h1" "img p1" "p2 p2";
+}
+article.sobre > h1 {
+  grid-area: h1;
+}
+
+#sobre1 {
+  grid-area: p1;
+}
+
+#sobre2 {
+  grid-area: p2;
+}
+
+main .img {
+  background-image: url(../img/micaelfarias.jpg);
+  background-size: 170%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  grid-area: img;
+  aspect-ratio: 1/1;
+}
+
+main > .sobre > h1 {
+  text-align: center;
+}
+
+main > article.sobre > p {
+  text-align: justify;
+  text-indent: 15px;
+}
+
+main > #bgc-dark {
+  background: rgba(255, 255, 255, 0.151);
+  width: 100%;
+}
+
+main > aside {
+  background: white;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+ul {
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+  list-style-type: none;
+  font-weight: 600;
+  color: #10195e;
+  font-size: 0.8em;
+}
+
+ul > li {
+}
