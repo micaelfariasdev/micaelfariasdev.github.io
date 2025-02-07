@@ -33,6 +33,8 @@ header {
 }
 
 div.conteiner {
+  max-width: 1000px;
+
   margin: auto;
   width: 90%;
   padding-top: 30px;
@@ -86,6 +88,7 @@ header img {
 }
 
 main {
+    
   background: var(--cor1);
   display: flex;
   flex-flow: row wrap;
@@ -94,6 +97,8 @@ main {
 
 main article,
 aside {
+  max-width: 1000px;
+
   align-content: center;
   width: 80%;
   padding-block: 10px;
@@ -216,3 +221,4 @@ footer {
 a > img {
   padding: 10px;
 }
+
