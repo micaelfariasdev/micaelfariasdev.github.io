@@ -19,26 +19,29 @@
 }
 
 head,
-body {
+body{
   height: 100vh;
-  width: 100vw;
+
 }
 
 body {
   background: var(--cor1);
 }
 
-header {
-  padding: 30px 30px 5px 30px;
+div.conteiner {
+  margin: auto;
+  width: 90%;
+  padding-top: 30px;
   display: grid;
   grid-template-areas: "menu-hamb logo menu-config";
-  grid-template-columns: 30px 70px 30px;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
+  justify-self: center;
   grid-area: logo;
+  width: 70px;
 }
 .logo > img#larger {
   display: none;
@@ -53,7 +56,7 @@ header {
 }
 
 .menu-config {
-  display: none;
+  
   grid-area: menu-config;
   background: var(--cor3);
   width: 40px;
@@ -77,7 +80,7 @@ main {
   justify-content: center;
 }
 
-main > article.artigo,
+main article,
 aside {
   align-content: center;
   width: 80%;
@@ -93,7 +96,7 @@ main h1 {
   font-style: normal;
 }
 
-main > article.artigo > p,
+main p,
 a {
   font-size: 0.6em;
   text-decoration: none;
@@ -101,12 +104,13 @@ a {
 }
 
 article.sobre {
+  width: 80%;
   padding: 20px;
   display: grid;
-  row-gap: 10px;
+  gap: 10px;
   align-items: center;
   justify-content: space-between;
-  grid-template-columns: 30% 65%;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas: "h1 h1" "img p1" "p2 p2";
 }
 article.sobre > h1 {
@@ -122,8 +126,10 @@ article.sobre > h1 {
 }
 
 main .img {
+  width: 100px;
+  height: 100px;
   background-image: url(../img/micaelfarias.jpg);
-  background-size: 170%;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 50px;
@@ -131,18 +137,20 @@ main .img {
   aspect-ratio: 1/1;
 }
 
-main > .sobre > h1 {
+.sobre > h1 {
   text-align: center;
 }
 
-main > article.sobre > p {
+article.sobre > p {
   text-align: justify;
   text-indent: 15px;
 }
 
-main > #bgc-dark {
+main #bgc-dark {
+  display: flex;
+  justify-content: center;
   background: rgba(255, 255, 255, 0.151);
-  width: 100%;
+  width: 100vw;
 }
 
 main > aside {
@@ -162,4 +170,12 @@ ul {
 }
 
 ul > li {
+}
+
+footer {
+  text-align: center;
+  background-color: var(--cor3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
+  font-size: 0.7em;
+  padding: 10px;
 }

@@ -8,20 +8,22 @@
   </head>
   <body>
     <header>
-      <div class="item logo">
-        <img id="larger" src="static/svg/logo-completa.svg" alt="logo" />
-        <img id="mobile" src="static/svg/logo-icon.svg" alt="logo" />
+      <div class="conteiner">
+          <div class="item logo">
+            <img id="larger" src="static/svg/logo-completa.svg" alt="logo" />
+            <img id="mobile" src="static/svg/logo-icon.svg" alt="logo" />
+          </div>
+          <div class="item menu-hamb">
+            <img src="static/svg/menu.svg" alt="menu" />
+          </div>
+          <div class="item menu-config">
+            <img src="static/svg/menu.svg" alt="menu" />
+          </div>
+          <nav class="item menu">
+            <a href="#">Projetos</a>
+            <a href="#">Cursos</a>
+          </nav>
       </div>
-      <div class="item menu-hamb">
-        <img src="static/svg/menu.svg" alt="menu" />
-      </div>
-      <div class="item menu-config">
-        <img src="static/svg/menu.svg" alt="menu" />
-      </div>
-      <nav class="item menu">
-        <a href="#">Projetos</a>
-        <a href="#">Cursos</a>
-      </nav>
     </header>
     <main>
       <article class="artigo saldacao">
@@ -29,24 +31,26 @@
         <h1>meu nome é Micael Farias</h1>
         <p>Estudante com um sonho e se tornar um Desenvolvedor.</p>
         <nav>
-          <a href="">1</a>
-          <a href="">2</a>
-          <a href="">3</a>
+          <a href="" id="git">1</a>
+          <a href="" id="linkedin">2</a>
+          <a href="" id="insta">3</a>
         </nav>
       </article>
-      <article class="artigo sobre" id="bgc-dark">
-        <h1>Sobre Mim</h1>
-        <div class="img"></div>
-        <p id="sobre1">
-          Iniciei minha carreira de estudo superior em 2017 quando ganhei uma bolso de 100% atráves
-          do PROUNI para estudar Engenharia Civil.
-        </p>
-        <p id="sobre2">
-          Com um tempo percebi que minha verdadeira paixão sempre foi a área de tecnologia, logo
-          resolvi mudar completamente meu foco e a 2 anos através de cursos online tenho estudado
-          sobre Programaçao e Desenvolvimento Web.
-        </p>
-      </article>
+      <div id="bgc-dark">
+          <article class="artigo sobre">
+            <h1>Sobre Mim</h1>
+            <div class="img"></div>
+            <p id="sobre1">
+              Iniciei minha carreira de estudo superior em 2017 quando ganhei uma bolso de 100% atráves
+              do PROUNI para estudar Engenharia Civil.
+            </p>
+            <p id="sobre2">
+              Com um tempo percebi que minha verdadeira paixão sempre foi a área de tecnologia, logo
+              resolvi mudar completamente meu foco e a 2 anos através de cursos online tenho estudado
+              sobre Programaçao e Desenvolvimento Web.
+            </p>
+          </article>
+      </div>
       <aside class="sobre">
         <h1>Cursos</h1>
         <ul>
@@ -58,8 +62,12 @@
       </aside>
     </main>
     <footer>
-      <div class="sociais"></div>
-      <p class="referencia"></p>
+      <div class="sociais">
+        <a href="" id="git">1</a>
+        <a href="" id="linkedin">2</a>
+        <a href="" id="insta">3</a>
+      </div>
+      <p class="referencia">© 2025 | v1.0.0 | Desenvolvido por Micael Farias</p>
     </footer>
   </body>
 </html>
