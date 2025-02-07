@@ -88,7 +88,6 @@ header img {
 }
 
 main {
-    
   background: var(--cor1);
   display: flex;
   flex-flow: row wrap;
@@ -186,6 +185,8 @@ main #bgc-dark {
 }
 
 main > aside {
+  position: relative;
+  top: -30px;
   background: white;
   margin: 10px;
   border-radius: 20px;
@@ -193,6 +194,8 @@ main > aside {
 }
 
 main > aside > h1 {
+  position: relative;
+  top: -5px;
   border-radius: 20px 20px 0px 0px;
   padding: 10px;
   color: #fffefe;
@@ -221,4 +224,3 @@ footer {
 a > img {
   padding: 10px;
 }
-
