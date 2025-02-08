@@ -1,14 +1,6 @@
 @charset "UFT-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: var(--font);
-  line-height: 1.7em;
-}
-
 :root {
   --cor1: #030722;
   --cor5: #10195e;
@@ -16,6 +8,14 @@
   --cor2: #5964b3;
   --cor3: #1f2024;
   --font: Nunito, Arial, san-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+  line-height: 1.7em;
 }
 
 html {
@@ -59,7 +59,6 @@ div.conteiner {
 }
 
 .menu-hamb {
-  display: none;
   grid-area: menu-hamb;
   background: var(--cor3);
   width: 40px;
@@ -69,18 +68,48 @@ div.conteiner {
 }
 
 .menu-config {
-  display: none;
-
+  display: grid;
+  align-items: center;
+  justify-items: center;
   grid-area: menu-config;
   background: var(--cor3);
   width: 40px;
   height: 40px;
-  padding: 10px;
   border-radius: 20px;
+}
+
+.lightvsg {
+  display: none;
+  transition: 1s;
+}
+
+.darkvsg {
+  display: block;
+  width: 100%;
+  height: 70%;
+  fill: rgb(255, 255, 255);
+  transition: 1s;
+}
+
+.darkmode .lightvsg {
+  display: block;
+  width: 100%;
+  height: 70%;
+  transition: 1s;
+  fill: rgb(0, 0, 0);
+}
+
+.darkmode .darkvsg {
+  transition: 1s;
+  display: none;
 }
 
 .menu {
   display: none;
+}
+
+.menu a {
+  color: white;
 }
 
 header img {
@@ -95,7 +124,7 @@ main {
 }
 
 main article,
-aside {
+.qlf {
   max-width: 1000px;
 
   align-content: center;
@@ -184,16 +213,23 @@ main #bgc-dark {
   width: 100vw;
 }
 
-main > aside {
+main > .qlf {
   position: relative;
+  display: grid;
+  gap: 10px;
+  justify-content: center;
   top: -30px;
-  background: white;
-  margin: 10px;
-  border-radius: 20px;
-  padding-top: 0;
 }
 
-main > aside > h1 {
+main > .qlf > aside {
+  width: 200px;
+  background: white;
+  border-radius: 20px;
+  padding-top: 0;
+  box-shadow: 0px 0px 10px black;
+}
+
+main > .qlf h1 {
   position: relative;
   top: -5px;
   border-radius: 20px 20px 0px 0px;
@@ -202,14 +238,14 @@ main > aside > h1 {
   background: var(--cor3);
 }
 
-ul {
+main > .qlf > aside > ul {
   padding: 10px;
   display: grid;
   justify-content: center;
   list-style-type: none;
   font-weight: 600;
   color: #10195e;
-  font-size: 0.8em;
+  font-size: 0.5em;
 }
 
 footer {
@@ -223,4 +259,41 @@ footer {
 
 a > img {
   padding: 10px;
+}
+
+.darkmode {
+  --cor1: #d8d9e2;
+  --cor5: #7886ee;
+  --cor4: #696e97;
+  --cor2: #1b235e;
+  --cor3: #afafaf;
+}
+
+.darkmode .logo > img#mobile {
+  filter: invert(0);
+}
+.darkmode p,
+a {
+  color: rgb(0, 0, 0);
+}
+
+.darkmode .menu a {
+  color: rgb(0, 0, 0);
+}
+
+.darkmode img {
+  filter: invert();
+}
+
+.darkmode h1 {
+  background: linear-gradient(0deg, var(--cor5), var(--cor2));
+  -webkit-background-clip: text;
+}
+
+.darkmode header {
+  background: rgb(255, 255, 255);
+}
+
+.darkmode main #bgc-dark {
+  background: rgba(36, 35, 35, 0.151);
 }

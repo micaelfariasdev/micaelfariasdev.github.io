@@ -21,6 +21,77 @@
     display: none;
   }
 
+  .thema {
+    grid-area: thema;
+    display: inline;
+    justify-self: end;
+    padding: 10px;
+  }
+
+  .trilho {
+    position: relative;
+    background: #3f3e3e;
+    border-radius: 50px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .trilho .square {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: #e0dede;
+    cursor: pointer;
+    left: 0px;
+    position: relative;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    transform: scale(0.9);
+    transition: 1s;
+  }
+
+  .trilho .lightvsg {
+    display: none;
+    transition: 1s;
+  }
+
+  .trilho .darkvsg {
+    display: block;
+    width: 70%;
+    height: 70%;
+    fill: black;
+    transition: 1s;
+  }
+
+  .trilho.dark .lightvsg {
+    display: block;
+    width: 70%;
+    height: 70%;
+    transition: 1s;
+    fill: rgb(255, 255, 255);
+    
+  }
+
+  .trilho.dark .darkvsg {
+    transition: 1s;
+    display: none;
+  }
+
+  .trilho.dark {
+    background-color: #c2c2c2;
+  }
+
+  .trilho.dark .square {
+    cursor: pointer;
+    position: relative;
+    left: 41px;
+    border-radius: 100px;
+    background-color: #4b4949;
+  }
+
   .menu {
     grid-area: gmenu;
     display: inline;
@@ -40,7 +111,7 @@
   }
 
   div.conteiner {
-    grid-template-areas: "logo gmenu";
+    grid-template-areas: "logo thema" "logo gmenu";
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +119,7 @@
   }
 
   .artigo {
-    min-height: 40vh;
+    min-height: 50vh;
   }
 
   main h1 {
@@ -73,9 +144,17 @@
     max-width: 900px;
   }
 
-  aside {
+  main > .qlf > aside {
+    width: 100%;
     position: relative;
-    top: -30px;
     max-width: 600px;
+  }
+
+  main > .qlf > aside > ul {
+    font-size: 1em;
+  }
+
+  main > .qlf {
+    grid-template-columns: 1fr 1fr;
   }
 }
