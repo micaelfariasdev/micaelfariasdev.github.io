@@ -231,7 +231,7 @@ main > .qlf {
   display: grid;
   gap: 10px;
   justify-content: center;
-  top: -30px;
+  top: -15px;
 }
 
 main > .qlf > aside {
