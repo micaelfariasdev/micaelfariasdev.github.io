@@ -1,0 +1,40 @@
+@charset "UFT-8";
+@media print {
+    
+
+html, body {
+    height: 29cm;
+    width: 21cm;
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#larger{
+    width: 9cm;
+    display: block;
+    filter: invert();
+}
+
+#mobile {
+    display: none;
+}
+
+#olá{
+    display: none;
+}
+
+#nome{
+    display: none;
+}
+
+#nomeprint{
+    display: block;
+}
+
+.item, .thema{
+    display: none;
+}
+
+footer {
+    display: none;
+}}

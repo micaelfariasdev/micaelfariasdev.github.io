@@ -212,6 +212,10 @@ main .img {
   text-align: center;
 }
 
+#nomeprint{
+  display: none;
+}
+
 article.sobre > p {
   text-align: justify;
   text-indent: 15px;
